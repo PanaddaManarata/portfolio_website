@@ -1,0 +1,61 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a.navbar-brand {
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.bg-light {
+  background-color: transparent;
+}
+
+.landingpage {
+  background-color: #ffecec;
+  height: 35vh;
+  position: relative;
+}
+
+.landingpage div {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.landingpage div h4 {
+  text-align: center;
+}
+
+.worksection {
+  min-height: 70vh;
+  background-color: lightcyan;
+}
+
+.worksection .work {
+  height: 250px;
+}
+
+.worksection .work:nth-child(even) {
+  background-color: yellow;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: #d2b0ff;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: hotpink;
+  }
+}
+/*# sourceMappingURL=style.css.map */
