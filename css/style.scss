@@ -50,7 +50,7 @@ a:hover{
 }
 
 .worksection {
-    min-height: 70vh;
+    min-height: 100%;
     background-color: lightcyan;
     width: 100vw;
     .w1{
@@ -76,15 +76,18 @@ a:hover{
         background-image: url(../img/frame6.png); 
     }
 
+    .w7{
+        background-image: url(../img/frame7.png); 
+    }
+
+    .w8{
+        background-image: url(../img/frame8.png); 
+    }
+
     .work {
-        min-height: 218px;
+        height: 50vh; 
         padding: 0;
-        background-size: cover;
-        
-        
-
-
-
+        background-size: contain;
         .work.col-md {
             padding: 0;
         }
@@ -148,10 +151,18 @@ a:hover{
 
             
         }
-
-
         .container-fluid {
             width: 960px;
+        }
+
+        .work {
+            height: 55vh;
+            padding: 0;
+            background-size: contain;
+            .work.col-md {
+                padding: 0;
+            }
+    
         }
     }
 
