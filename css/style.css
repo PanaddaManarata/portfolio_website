@@ -5,10 +5,23 @@
           box-sizing: border-box;
 }
 
+.wrapper {
+  margin: 0;
+  width: 100vw;
+}
+
 a.navbar-brand {
   margin: 0;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+a {
+  color: grey;
+}
+
+a:hover {
+  color: #6d6565;
 }
 
 .bg-light {
@@ -35,45 +48,47 @@ a.navbar-brand {
 }
 
 .worksection {
-  min-height: 70vh;
+  min-height: 100vh;
   background-color: lightcyan;
+  width: 100vw;
+}
+
+.worksection .w1 {
+  background-image: url(../img/frame3.png);
+}
+
+.worksection .w2 {
+  background-image: url(../img/frame4.png);
+}
+
+.worksection .w3 {
+  background-image: url(../img/Frame1.png);
+}
+
+.worksection .w4 {
+  background-image: url(../img/frame2.png);
+}
+
+.worksection .w5 {
+  background-image: url(../img/frame5.png);
+}
+
+.worksection .w6 {
+  background-image: url(../img/frame6.png);
 }
 
 .worksection .work {
-  height: 250px;
+  min-height: 218px;
+  padding: 0;
+  background-size: cover;
 }
 
-.worksection .work:nth-child(even) {
-  background-color: yellow;
+.worksection .work .work.col-md {
+  padding: 0;
 }
 
 .formwrap {
   width: 80vw;
-}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
 }
 
 .footer {
@@ -86,18 +101,45 @@ input[type=submit]:hover {
   height: 10vh;
 }
 
+.footer .media {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 50vw;
+  height: 20vh;
+  padding: 10%;
+}
+
 @media (min-width: 768px) {
-  body {
-    background-color: #d2b0ff;
-  }
   .formwrap {
     width: 40vw;
+  }
+  .landingpage {
+    height: 45vh;
   }
 }
 
 @media (min-width: 1200px) {
   body {
-    background-color: hotpink;
+    background-color: whitesmoke;
   }
+  .wrapper {
+    width: 960px;
+    margin: 0 auto;
+    background-color: white;
+  }
+  .wrapper .landingpage {
+    height: 65vh;
+  }
+  .wrapper .container-fluid {
+    width: 960px;
+  }
+
+  
+.worksection .work {
+  min-height: 50vh;
+  padding: 0;
+  background-size: cover;
+}
 }
 /*# sourceMappingURL=style.css.map */
