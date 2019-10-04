@@ -16,7 +16,7 @@ body{
 
 a.navbar-brand {
     margin: 0;
-    letter-spacing: 2px;
+    letter-spacing: 2git px;
     text-transform: uppercase;
 }
 
@@ -184,16 +184,13 @@ a:hover {
         text-align: center;
         padding: 5vh;
         height: 10vh;
-        font-family: 'Yeseva One', cursive;
+        
         letter-spacing: 1px;
-
     }
 
     .myself {
         padding: 20px;
         text-align: center;
-
-
     }
 
     .media {
@@ -201,15 +198,19 @@ a:hover {
         width: 50vw;
         height: 20vh;
         padding: 10%;
-
+        a{
+            color: rgb(66, 66, 66);
+        }
+        a:hover{
+            color: rgb(134, 133, 133);
+        }
     }
     .make{
         text-align: center; 
         letter-spacing: 1px;
         padding-right: 15px; 
         color: grey; 
-        font-size: 10px; 
-        
+        font-size: 10px;  
     }
 }
 
@@ -225,40 +226,29 @@ a:hover {
         height: 45vh;
     }
 
-
     .worksection {
         min-height: 100%;
         background-color: lightcyan;
         width: 100vw;
-
-
         .work {
             height: 34vh;
             padding: 0;
             background-size: contain;
-
-
             .work.col-md {
                 padding: 0;
             }
-
         }
-
     }
-
-
 }
 
 @media (min-width: 1200px) {
     body {
         background-color: rgb(248, 244, 244);
     }
-
     .wrapper {
         width: 960px;
         margin: 0 auto;
         background-color: white;
-
         .landingpage {
             height: 65vh;
             width: 100%;
@@ -269,20 +259,13 @@ a:hover {
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                background-color:  rgb(228, 143, 94);
-                height: 15px;
-
+                /*background-color:  rgb(228, 143, 94);
+                height: 15px; */
                 h4 {
-                    margin-top: -16px;
                     text-align: center;
                     font-family: 'Yeseva One', cursive;
                     letter-spacing: 1px;
-                    font-size: 28px;
-
-                    span {
-                        border-bottom: none;
-                    }
-
+                    font-size: 35px;
                 }
             }
         }
@@ -375,6 +358,5 @@ a:hover {
 
 
     }
-
 
 }

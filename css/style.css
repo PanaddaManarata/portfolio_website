@@ -17,7 +17,7 @@ body {
 
 a.navbar-brand {
   margin: 0;
-  letter-spacing: 2px;
+  letter-spacing: 2git px;
   text-transform: uppercase;
 }
 
@@ -165,7 +165,6 @@ a:hover {
   text-align: center;
   padding: 5vh;
   height: 10vh;
-  font-family: 'Yeseva One', cursive;
   letter-spacing: 1px;
 }
 
@@ -181,6 +180,14 @@ a:hover {
   width: 50vw;
   height: 20vh;
   padding: 10%;
+}
+
+.footer .media a {
+  color: #424242;
+}
+
+.footer .media a:hover {
+  color: #868585;
 }
 
 .footer .make {
@@ -233,18 +240,14 @@ a:hover {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    background-color: #e48f5e;
-    height: 15px;
+    /*background-color:  rgb(228, 143, 94);
+                height: 15px; */
   }
   .wrapper .landingpage div h4 {
-    margin-top: -16px;
     text-align: center;
     font-family: 'Yeseva One', cursive;
     letter-spacing: 1px;
-    font-size: 28px;
-  }
-  .wrapper .landingpage div h4 span {
-    border-bottom: none;
+    font-size: 35px;
   }
   .wrapper .container-fluid {
     width: 960px;
