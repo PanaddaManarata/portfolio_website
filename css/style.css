@@ -52,7 +52,7 @@ a:hover {
 }
 
 .landingpage div h4 span {
-  border-bottom: #CE8054 10px solid;
+  border-bottom: #e48f5e 10px solid;
 }
 
 .worksection {
@@ -145,7 +145,7 @@ a:hover {
 .worksection .w8 div a {
   text-align: center;
   letter-spacing: 1px;
-  border-bottom: #CE8054 10px solid;
+  border-bottom: #e48f5e 10px solid;
 }
 
 .formwrap {
@@ -228,7 +228,7 @@ a:hover {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    background-color: #CE8054;
+    background-color: #e48f5e;
     height: 15px;
   }
   .wrapper .landingpage div h4 {
