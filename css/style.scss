@@ -71,7 +71,8 @@ a:hover {
     }
 
     .work {
-        min-height: 45vh;
+        height: 45vh;
+        min-height: 315px; 
         background-repeat: no-repeat;
         background-size: contain;
         text-align: right;
