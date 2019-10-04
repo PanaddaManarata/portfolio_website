@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0 auto;
     padding: 0;
@@ -9,20 +7,21 @@
 .wrapper {
     margin: 0;
     width: 100vw;
+    position: relative;
 }
 
 a.navbar-brand {
     margin: 0;
     letter-spacing: 1px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
-a{
+a {
     color: grey;
 }
 
-a:hover{
-    color: rgb(109, 101, 101); 
+a:hover {
+    color: rgb(109, 101, 101);
 }
 
 
@@ -31,10 +30,11 @@ a:hover{
 }
 
 .landingpage {
-    background-color: rgb(255, 236, 236);
-    height: 35vh;
 
+    height: 35vh;
     position: relative;
+    width: 100vw;
+
 
     div {
         margin: 0;
@@ -45,62 +45,99 @@ a:hover{
 
         h4 {
             text-align: center;
+            font-family: 'Yeseva One', cursive;
         }
     }
 }
 
 .worksection {
-    min-height: 100%;
-    background-color: lightcyan;
+
     width: 100vw;
-    .w1{
-        background-image: url(../img/frame3.png)
-    }
-    .w2{
-        background-image: url(../img/frame4.png)
-       
     
-    }
-    .w3{
-        background-image: url(../img/Frame1.png); 
-    }
-    .w4{
-        background-image:  url(../img/frame2.png); 
+
+    .hide {
+        display: none;
     }
 
-    .w5{
-        background-image: url(../img/frame5.png);
-    }
-
-    .w6{
-        background-image: url(../img/frame6.png); 
-    }
-
-    .w7{
-        background-image: url(../img/frame7.png); 
-    }
-
-    .w8{
-        background-image: url(../img/frame8.png); 
+    .big {
+        display: block;
     }
 
     .work {
-        height: 50vh; 
-        padding: 0;
+        min-height: 25vh;
+        background-repeat: no-repeat;
         background-size: contain;
+        width: 100vw;
+        text-align: right; 
+        a{
+            padding: 20px; 
+            color: rgb(66, 66, 66); 
+            text-decoration: none;
+            font-size: 25px; 
+            
+           
+
+        }
+
+        a:hover{
+            color: rgb(134, 133, 133); 
+            font-size: 27px; 
+        }
         .work.col-md {
             padding: 0;
         }
-
     }
 
 
+
+
+
+    .w1 {
+        background-image: url(../img/sm1.png)
+    }
+
+    .w2 {
+        background-image: url(../img/sm2.png);
+        background-color: #FDF1CB;
+        align-content: center;
+
+    }
+
+    .w3 {
+        background-image: url(../img/sm3.png);
+        background-color: #FDF1CB;
+    }
+
+    .w4 {
+        background-image: url(../img/sm4.png);
+        background-color: #CE8054;
+    }
+
+    .w5 {
+        background-image: url(../img/sm5.png);
+        background-color: #FBE5BA;
+    }
+
+    .w6 {
+        background-image: url(../img/sm6.png);
+    }
+
+    .w7 {
+        background-image: url(../img/sm7.png);
+        background-color: #CE8054;
+    }
+
+    .w8 {
+        background-color: #FDF1CB;
+        font-family: 'Yeseva One', cursive;
+        text-align: center; 
+        padding: 12%; 
+    }
 }
 
 .formwrap {
     width: 80vw;
 }
-
 
 .footer {
 
@@ -125,13 +162,34 @@ a:hover{
 
 
 @media (min-width: 768px) {
-    
+
     .formwrap {
         width: 40vw;
     }
 
-    .landingpage{
-        height: 45vh; 
+    .landingpage {
+        height: 45vh;
+    }
+
+
+    .worksection {
+        min-height: 100%;
+        background-color: lightcyan;
+        width: 100vw;
+
+
+        .work {
+            height: 34vh;
+            padding: 0;
+            background-size: contain;
+
+
+            .work.col-md {
+                padding: 0;
+            }
+
+        }
+
     }
 
 
@@ -139,31 +197,83 @@ a:hover{
 
 @media (min-width: 1200px) {
     body {
-     background-color: whitesmoke;
+        background-color: whitesmoke;
     }
 
     .wrapper {
         width: 960px;
         margin: 0 auto;
-        background-color: white; 
-        .landingpage{
-            height: 65vh;
+        background-color: white;
 
-            
+        .landingpage {
+            height: 65vh;
+            width: 100%;
+
         }
+
         .container-fluid {
             width: 960px;
         }
 
-        .work {
-            height: 55vh;
-            padding: 0;
-            background-size: contain;
-            .work.col-md {
-                padding: 0;
+        .worksection {
+            min-height: 100%;
+            background-color: lightcyan;
+            width: 100%;
+
+            .hide {
+                display: block;
             }
-    
+
+            .big {
+                display: none;
+            }
+
+            .work {
+                height: 55vh;
+                padding: 0;
+                background-size: cover;
+                margin: 0 auto;
+
+                .work.col-md {
+                    padding: 0;
+                }
+
+            }
+
+            .w1 {
+                background-image: url(../img/sm1.png)
+            }
+
+            .w2 {
+                background-image: url(../img/m2.png)
+            }
+
+            .w3 {
+                background-image: url(../img/m3.png);
+            }
+
+            .w4 {
+                background-image: url(../img/m4.png);
+            }
+
+            .w5 {
+                background-image: url(../img/m5.png);
+            }
+
+            .w6 {
+                background-image: url(../img/m6.png);
+            }
+
+            .w7 {
+                background-image: url(../img/sm7.png);
+            }
+
+
+
+
         }
+
+
     }
 
 

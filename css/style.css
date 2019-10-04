@@ -8,6 +8,7 @@
 .wrapper {
   margin: 0;
   width: 100vw;
+  position: relative;
 }
 
 a.navbar-brand {
@@ -29,9 +30,9 @@ a:hover {
 }
 
 .landingpage {
-  background-color: #ffecec;
   height: 35vh;
   position: relative;
+  width: 100vw;
 }
 
 .landingpage div {
@@ -45,54 +46,85 @@ a:hover {
 
 .landingpage div h4 {
   text-align: center;
+  font-family: 'Yeseva One', cursive;
 }
 
 .worksection {
-  min-height: 100%;
-  background-color: lightcyan;
   width: 100vw;
 }
 
-.worksection .w1 {
-  background-image: url(../img/frame3.png);
+.worksection .hide {
+  display: none;
 }
 
-.worksection .w2 {
-  background-image: url(../img/frame4.png);
-}
-
-.worksection .w3 {
-  background-image: url(../img/Frame1.png);
-}
-
-.worksection .w4 {
-  background-image: url(../img/frame2.png);
-}
-
-.worksection .w5 {
-  background-image: url(../img/frame5.png);
-}
-
-.worksection .w6 {
-  background-image: url(../img/frame6.png);
-}
-
-.worksection .w7 {
-  background-image: url(../img/frame7.png);
-}
-
-.worksection .w8 {
-  background-image: url(../img/frame8.png);
+.worksection .big {
+  display: block;
 }
 
 .worksection .work {
-  height: 50vh;
-  padding: 0;
+  min-height: 25vh;
+  background-repeat: no-repeat;
   background-size: contain;
+  width: 100vw;
+  text-align: right;
+}
+
+.worksection .work a {
+  padding: 20px;
+  color: #424242;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.worksection .work a:hover {
+  color: #868585;
+  font-size: 27px;
 }
 
 .worksection .work .work.col-md {
   padding: 0;
+}
+
+.worksection .w1 {
+  background-image: url(../img/sm1.png);
+}
+
+.worksection .w2 {
+  background-image: url(../img/sm2.png);
+  background-color: #FDF1CB;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.worksection .w3 {
+  background-image: url(../img/sm3.png);
+  background-color: #FDF1CB;
+}
+
+.worksection .w4 {
+  background-image: url(../img/sm4.png);
+  background-color: #CE8054;
+}
+
+.worksection .w5 {
+  background-image: url(../img/sm5.png);
+  background-color: #FBE5BA;
+}
+
+.worksection .w6 {
+  background-image: url(../img/sm6.png);
+}
+
+.worksection .w7 {
+  background-image: url(../img/sm7.png);
+  background-color: #CE8054;
+}
+
+.worksection .w8 {
+  background-color: #FDF1CB;
+  font-family: 'Yeseva One', cursive;
+  text-align: center;
+  padding: 12%;
 }
 
 .formwrap {
@@ -125,6 +157,19 @@ a:hover {
   .landingpage {
     height: 45vh;
   }
+  .worksection {
+    min-height: 100%;
+    background-color: lightcyan;
+    width: 100vw;
+  }
+  .worksection .work {
+    height: 34vh;
+    padding: 0;
+    background-size: contain;
+  }
+  .worksection .work .work.col-md {
+    padding: 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -138,17 +183,51 @@ a:hover {
   }
   .wrapper .landingpage {
     height: 65vh;
+    width: 100%;
   }
   .wrapper .container-fluid {
     width: 960px;
   }
-  .wrapper .work {
+  .wrapper .worksection {
+    min-height: 100%;
+    background-color: lightcyan;
+    width: 100%;
+  }
+  .wrapper .worksection .hide {
+    display: block;
+  }
+  .wrapper .worksection .big {
+    display: none;
+  }
+  .wrapper .worksection .work {
     height: 55vh;
     padding: 0;
-    background-size: contain;
+    background-size: cover;
+    margin: 0 auto;
   }
-  .wrapper .work .work.col-md {
+  .wrapper .worksection .work .work.col-md {
     padding: 0;
+  }
+  .wrapper .worksection .w1 {
+    background-image: url(../img/sm1.png);
+  }
+  .wrapper .worksection .w2 {
+    background-image: url(../img/m2.png);
+  }
+  .wrapper .worksection .w3 {
+    background-image: url(../img/m3.png);
+  }
+  .wrapper .worksection .w4 {
+    background-image: url(../img/m4.png);
+  }
+  .wrapper .worksection .w5 {
+    background-image: url(../img/m5.png);
+  }
+  .wrapper .worksection .w6 {
+    background-image: url(../img/m6.png);
+  }
+  .wrapper .worksection .w7 {
+    background-image: url(../img/sm7.png);
   }
 }
 /*# sourceMappingURL=style.css.map */
