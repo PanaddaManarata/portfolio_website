@@ -30,6 +30,7 @@ a:hover {
 }
 
 .landingpage {
+  background-color: white;
   height: 35vh;
   position: relative;
   width: 100vw;
@@ -47,6 +48,11 @@ a:hover {
 .landingpage div h4 {
   text-align: center;
   font-family: 'Yeseva One', cursive;
+  letter-spacing: 1px;
+}
+
+.landingpage div h4 span {
+  border-bottom: #CE8054 10px solid;
 }
 
 .worksection {
@@ -62,15 +68,14 @@ a:hover {
 }
 
 .worksection .work {
-  min-height: 25vh;
+  min-height: 45vh;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100vw;
   text-align: right;
 }
 
 .worksection .work a {
-  padding: 20px;
+  padding-right: 20px;
   color: #424242;
   text-decoration: none;
   font-size: 25px;
@@ -86,37 +91,39 @@ a:hover {
 }
 
 .worksection .w1 {
-  background-image: url(../img/sm1.png);
+  background-image: url(../img/m1.png);
+  background-color: white;
 }
 
 .worksection .w2 {
-  background-image: url(../img/sm2.png);
+  background-image: url(../img/sm2.1.png);
   background-color: #FDF1CB;
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
 .worksection .w3 {
-  background-image: url(../img/sm3.png);
+  background-image: url(../img/m3.png);
   background-color: #FDF1CB;
 }
 
 .worksection .w4 {
-  background-image: url(../img/sm4.png);
+  background-image: url(../img/m4.png);
   background-color: #CE8054;
 }
 
 .worksection .w5 {
-  background-image: url(../img/sm5.png);
+  background-image: url(../img/m5.png);
   background-color: #FBE5BA;
 }
 
 .worksection .w6 {
-  background-image: url(../img/sm6.png);
+  background-image: url(../img/m6.png);
+  background-color: white;
 }
 
 .worksection .w7 {
-  background-image: url(../img/sm7.png);
+  background-image: url(../img/m7.png);
   background-color: #CE8054;
 }
 
@@ -124,7 +131,21 @@ a:hover {
   background-color: #FDF1CB;
   font-family: 'Yeseva One', cursive;
   text-align: center;
-  padding: 12%;
+  padding: 25%;
+}
+
+.worksection .w8 div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.worksection .w8 div a {
+  text-align: center;
+  letter-spacing: 1px;
+  border-bottom: #CE8054 10px solid;
 }
 
 .formwrap {
@@ -139,6 +160,13 @@ a:hover {
   text-align: center;
   padding: 5vh;
   height: 10vh;
+  font-family: 'Yeseva One', cursive;
+  letter-spacing: 1px;
+}
+
+.footer .myself {
+  padding: 20px;
+  text-align: center;
 }
 
 .footer .media {
@@ -148,6 +176,14 @@ a:hover {
   width: 50vw;
   height: 20vh;
   padding: 10%;
+}
+
+.footer .make {
+  text-align: center;
+  letter-spacing: 1px;
+  padding-right: 15px;
+  color: grey;
+  font-size: 10px;
 }
 
 @media (min-width: 768px) {
@@ -174,7 +210,7 @@ a:hover {
 
 @media (min-width: 1200px) {
   body {
-    background-color: whitesmoke;
+    background-color: #f8f4f4;
   }
   .wrapper {
     width: 960px;
@@ -184,6 +220,26 @@ a:hover {
   .wrapper .landingpage {
     height: 65vh;
     width: 100%;
+  }
+  .wrapper .landingpage div {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: #CE8054;
+    height: 15px;
+  }
+  .wrapper .landingpage div h4 {
+    margin-top: -16px;
+    text-align: center;
+    font-family: 'Yeseva One', cursive;
+    letter-spacing: 1px;
+    font-size: 28px;
+  }
+  .wrapper .landingpage div h4 span {
+    border-bottom: none;
   }
   .wrapper .container-fluid {
     width: 960px;
@@ -228,6 +284,23 @@ a:hover {
   }
   .wrapper .worksection .w7 {
     background-image: url(../img/sm7.png);
+  }
+  .wrapper .worksection .w8 {
+    padding-top: 15%;
+  }
+  .wrapper .footer {
+    height: 45vh;
+  }
+  .wrapper .footer .text {
+    padding-top: 50px;
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+  .wrapper .footer .make {
+    text-align: right;
+    letter-spacing: 1px;
+    padding-right: 15px;
+    color: grey;
   }
 }
 /*# sourceMappingURL=style.css.map */
