@@ -196,6 +196,7 @@ a:hover {
   padding-right: 15px;
   color: grey;
   font-size: 10px;
+  padding: 5px;
 }
 
 @media (min-width: 768px) {
